@@ -1,0 +1,16 @@
+export const UPDATE_GOODS = 'UPDATE_GOODS'; // загрузка - 
+export const UPDATE_LOADING = 'UPDATE_LOADING';
+export const UPDATE_CATEGORY = 'UPDATE_CATEGORY'; // шпинер
+export const UPDATE_CART = 'UPDATE_CART';  // загрузка - 
+export const UPDATE_BRANDS = 'UPDATE_BRANDS'; // загрузка - 
+export const UPDATE_COLORS = 'UPDATE_COLORS';  // загрузка - 
+export const UPDATE_PRICES = 'UPDATE_PRICES';  // загрузка - 
+export const SORT_BY_ISOPEN = 'SORT_BY_ISOPEN'; // выбранная категория сортировки 
+export const SORT_BY_VALUE = 'SORT_BY_VALUE'; // выбранная категория сортировки 
+export const LIST_ISOPEN = 'LIST_ISOPEN';  // открытие окошка фильтров
+export const LIST_NUMBER = 'LIST_NUMBER'; // кол-во отображаемых товаров
+export const CHOSEN_IMG = 'CHOSEN_IMG'; // фото выбранного товара
+export const CHOSEN_DESC = 'CHOSEN_DESC'; // описание выбранного товара
+export const RECENT_PRODUCT = 'RECENT_PRODUCT'; // последний выбранный товар
+export const SLIDER_IMAGE = 'SLIDER_IMAGE'; // выбранная картинка слайдера
+export const CURRENT_PAGE = 'CURRENT_PAGE'; // страница товаров 
