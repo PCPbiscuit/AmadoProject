@@ -57,6 +57,8 @@ function Sidecategory(props) {
     function renderClickCategories(e){
         
         updateCategory(e.currentTarget.getAttribute('name'))
+        currentPageUpdate(1)
+
     }
 
     function renderCategories() {

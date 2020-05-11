@@ -114,14 +114,14 @@ function Productsarea(props) {
                       title=""
                       data-original-title="Add to Cart"
                     ></a> */}
-                          <img
+                          <i className="fa fa-shopping-cart"
                             src={cartImg}
                             alt={product.title}
                             onClick={cartHandler}
                             name={product.id}
                             price={product.price}
                             imagesrc={product.img_url}
-                            style={{ cursor: "pointer" }}
+                            style={{ cursor: "pointer",  }}
                             // title = {product.title}
                           />
                         </div>

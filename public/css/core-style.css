@@ -1112,7 +1112,16 @@ img {
       font-size: 10px;
       color: #fbb710; }
     .single-product-wrapper .product-description .ratings-cart .cart {
-      display: block; }
+      display: block;
+      transition: 0.5s ease;}
+      .single-product-wrapper .product-description .ratings-cart .cart:hover{
+        color: #FBB710;
+      }
+      .single-product-wrapper .product-description .ratings-cart .cart .fa{
+        font-size: 25px;
+        margin-top: 20%;
+      }
+    
   .single-product-wrapper:hover .product-img .hover-img {
     opacity: 1;
     visibility: visible; }
@@ -1394,6 +1403,8 @@ img {
     width: 100%;
     border-radius: 0;
     background-color: #f5f7fa; }
+
+
 
 /* ##### The End ##### */
 

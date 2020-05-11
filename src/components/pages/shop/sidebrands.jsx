@@ -1,10 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import * as PropTypes from "prop-types";
-import { updateBrands } from "../../../store/action_creators";
+import { updateBrands, currentPageUpdate } from "../../../store/action_creators";
 
 Sidebrands.propTypes = {
   updateBrands: PropTypes.func,
+  currentPageUpdate: PropTypes.func,
   brands: PropTypes.string,
 };
 
@@ -44,11 +45,13 @@ let brandsList = [
 ];
 
 function Sidebrands(props) {
-  const { brands, updateBrands } = props;
+  const { brands, updateBrands, currentPageUpdate } = props;
 
   function renderBrandsClick(e) {
     // console.log("CLICK HAPPENED", e.target.getAttribute("itemid"));
     updateBrands(e.currentTarget.getAttribute("surname"));
+    currentPageUpdate(1)
+
   }
 
   function renderBrands() {
@@ -126,6 +129,7 @@ const mapStateToProps = (store) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     updateBrands: (e) => dispatch(updateBrands(e)),
+    currentPageUpdate: (e) => dispatch(currentPageUpdate(e)),
   };
 };
 
