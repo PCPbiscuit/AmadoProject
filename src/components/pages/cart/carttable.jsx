@@ -31,6 +31,8 @@ function Carttable(props) {
         cart[e.currentTarget.getAttribute("surname")].amount++;
       }
       updateCart(cart);
+      localStorage.setItem("local", JSON.stringify(cart));
+      
     }
     return (
       <tr key= {index}>

@@ -16,7 +16,8 @@ function Cartfavsearch(props) {
   let counter;
 
   for (let i = 0; i < cart.length; i++) {
-    counter = cart[i].amount;
+    counter = cart.length;
+    console.log(cart, 'CARTBITCH')
   }
   return (
     <div className="cart-fav-search mb-100">

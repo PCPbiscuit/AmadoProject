@@ -3,13 +3,14 @@ import { connect } from "react-redux";
 import * as PropTypes from "prop-types";
 import {Link} from 'react-router-dom'
 import * as URL from '../../../router/url'
-import { updateCategory, updateBrands, updateColors } from '../../../store/action_creators'
+import { updateCategory, updateBrands, updateColors, currentPageUpdate } from '../../../store/action_creators'
 
 
 Sidecategory.propTypes = {
     updateCategory: PropTypes.func,
     updateBrands: PropTypes.func,
     updateColors: PropTypes.func,
+    currentPageUpdate: PropTypes.func,
     categories: PropTypes.string,
   };
 
@@ -50,6 +51,7 @@ function Sidecategory(props) {
         updateCategory,
         updateBrands,
         updateColors,
+        currentPageUpdate
     } = props
 
     function renderClickCategories(e){
@@ -71,7 +73,9 @@ function Sidecategory(props) {
 
       function resetFilters(){
         updateCategory('All');
-        updateColors('All')
+        updateColors('All');
+        currentPageUpdate(1)
+
       }
 
   return (
@@ -100,6 +104,7 @@ const mapStateToProps = (store) => {
       updateCategory: (e) => dispatch(updateCategory(e)),
       updateColors: (e) => dispatch(updateColors(e)),
       updateBrands: (e) => dispatch(updateBrands(e)),
+      currentPageUpdate: (e) => dispatch(currentPageUpdate(e)),
     };
   };
   
