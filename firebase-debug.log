@@ -1,0 +1,26 @@
+[debug] [2020-07-01T17:19:38.492Z] ----------------------------------------------------------------------
+[debug] [2020-07-01T17:19:38.494Z] Command:       D:\JS\node.exe C:\Users\vovas\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-07-01T17:19:38.494Z] CLI Version:   8.4.3
+[debug] [2020-07-01T17:19:38.494Z] Platform:      win32
+[debug] [2020-07-01T17:19:38.494Z] Node Version:  v12.13.0
+[debug] [2020-07-01T17:19:38.495Z] Time:          Wed Jul 01 2020 20:19:38 GMT+0300 (Moscow Standard Time)
+[debug] [2020-07-01T17:19:38.495Z] ----------------------------------------------------------------------
+[debug] [2020-07-01T17:19:38.495Z] 
+[debug] [2020-07-01T17:19:38.502Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-01T17:19:38.502Z] > authorizing via signed-in user
+[debug] [2020-07-01T17:19:38.503Z] [iam] checking project amadoshopproject for permissions ["firebase.projects.get"]
+[debug] [2020-07-01T17:19:38.505Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/amadoshopproject:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-07-01T17:19:39.522Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Jul 2020 17:19:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=912","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-01T17:19:39.526Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amadoshopproject  
+ 
+[debug] [2020-07-01T17:19:39.741Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Jul 2020 17:19:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Serving from 'D:\Front\React2.0\AmadoProject\AmadoProject'...
+[info] 
+[debug] [2020-07-01T17:19:39.758Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amadoshopproject/webApps/-/config  
+ 
+[debug] [2020-07-01T17:19:40.402Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 01 Jul 2020 17:19:31 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: (public) {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m(public)\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/Jul/2020:17:19:48 +0000] "GET / HTTP/1.1" 200 3510 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/Jul/2020:17:19:48 +0000] \"GET / HTTP/1.1\" 200 3510 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36\""}}

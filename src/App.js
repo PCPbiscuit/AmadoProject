@@ -22,7 +22,7 @@ function App(props) {
 	};
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
     <div className="App">
       <div className="main-content-wrapper d-flex clearfix">
           <Mobile />
